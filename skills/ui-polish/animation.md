@@ -1,5 +1,7 @@
 # Animation
 
+> Adapted from [Impeccable](https://github.com/pbakaus/impeccable) by Paul Bakaus (Apache-2.0, see `LICENSE`), which started from Anthropic's `frontend-design` skill. Modified for this harness.
+
 Use motion to explain state, relationship, or hierarchy, or for one authored moment the surface has earned. Decoration without purpose is animation debt.
 
 ## Find the job

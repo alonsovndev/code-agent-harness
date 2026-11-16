@@ -1,5 +1,7 @@
 # Responsive Design
 
+> Adapted from [Impeccable](https://github.com/pbakaus/impeccable) by Paul Bakaus (Apache-2.0, see `LICENSE`), which started from Anthropic's `frontend-design` skill. Modified for this harness.
+
 Adapting to a new context (screen size, device, input method) is rethinking the experience for that context, not scaling pixels. Screen size alone doesn't tell you the input method — a laptop can have a touchscreen, a tablet can have a keyboard.
 
 ## Mobile-first

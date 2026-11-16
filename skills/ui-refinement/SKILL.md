@@ -1,6 +1,6 @@
 ---
 name: ui-refinement
-description: "Use when auditing and refining an existing React/Vite/Ant Design UI so it feels intentionally designed — preserving functionality, information architecture, and technical architecture. Covers design audit, generic-AI-pattern detection, design direction, prioritized implementation, and verification. Keywords: improve ui, refine ui, design audit, generic ai ui, impeccable, visual hierarchy, polish existing ui, saas look."
+description: "Use when auditing and refining an existing React/Vite/Ant Design UI so it feels intentionally designed — preserving functionality, information architecture, and technical architecture. Covers design audit, generic-AI-pattern detection, design direction, prioritized implementation, and verification. Keywords: improve ui, refine ui, design audit, generic ai ui, visual hierarchy, polish existing ui, saas look."
 argument-hint: "Target page, feature, or component area to refine, plus any focus areas such as typography, color, or layout."
 user-invocable: true
 ---
