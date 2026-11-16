@@ -142,7 +142,7 @@ For multi-step feature work, consult the orchestration directory:
 - **Routing**: `orchestration/router.md` — which subagent for which domain
 - **Quality gates**: `orchestration/quality-gates.md` — required and conditional checks
 - **Handoff format**: `orchestration/handoff-contract.md` — how to delegate to subagents
-- **Task templates**: `orchestration/task-templates/` — feature, bugfix, and API change workflows
+- **Task templates**: `orchestration/task-templates/` — feature, bugfix, refactor, hotfix, and API change workflows
 
 When adding a full-stack feature, combine `vertical-slicing` with `clean-architecture-ddd`: implement one thin vertical slice at a time (presentation → application → domain → infrastructure → tests), enforcing layer boundaries within each slice.
 

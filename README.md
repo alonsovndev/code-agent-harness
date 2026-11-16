@@ -34,8 +34,11 @@ This project complements the [skills.sh](https://skills.sh/) ecosystem; it does 
 | `adapters/`                 | Harness-specific config files that are safe to version.                                                                                                            |
 | `profiles/`                 | Model/profile mapping by harness.                                                                                                                                  |
 | `scripts/`                  | Local install, uninstall, and validation scripts.                                                                                                                  |
+| `orchestration/`            | Subagent routing, quality gates, handoff contract, and task templates (feature, bugfix, api-change, refactor, hotfix). |
+| `plugins/`                  | Claude Code plugin list installed by `scripts/install-plugins.sh`. |
+| `third-party/`              | Upstream skill sources installed by `scripts/install-skills.sh`. |
 
-Core agents currently include `code-review`, `product-ba`, `tech-lead`, `python-api`, `react-ui`, `postgresql`, `terraform`, `bug-finder`, and `doc-tracker`.
+Core agents currently include `code-review`, `product-ba`, `tech-lead`, `python-api`, `react-ui`, `clean-architecture`, `ui-polish`, `postgresql`, `terraform`, `bug-finder`, and `doc-tracker`.
 
 Core development workflow skills include `git-repo-flow`, `git-commit`, `git-create-pr`, `gh-prs`, `pr-review`, `branch-protection`, `auto-delete-branches`, `local-repo-setup`, `git-repo-setup`, `ai-repo-setup`, `workspace-setup`, `github-actions`, and `spec-planning`.
 
@@ -71,7 +74,7 @@ Claude Code plugins listed in `plugins/claude-plugins.txt` are installed separat
 
 `verify.sh` checks the managed symlinks and enforces parity against `agents/claude/` and `commands/claude/`. Codex custom agents live under `agents/codex/`; each canonical command has a Codex skill equivalent under `adapters/codex/skills/<command>/`, linked per skill into `~/.codex/skills` so it stays out of the shared skills tree the other harnesses load. Add new agents and commands to every supported harness in the same change.
 
-`./scripts/test-install.sh` checks tool selection, terminal menus, dry runs, installation, uninstall, generator-marker compatibility, and clone relocation in temporary directories. Its terminal tests use Python's standard library. `./scripts/test-verify.sh` self-tests verifier parity, and `./scripts/test-run-agent.sh` checks launcher arguments through stub executables without model calls. Run the matching self-test after changing these scripts.
+`./scripts/test-install.sh` checks tool selection, terminal menus, dry runs, installation, uninstall, generator-marker compatibility, and clone relocation in temporary directories. Its terminal tests use Python's standard library. `./scripts/test-verify.sh` self-tests verifier parity, and `./scripts/test-run-agent.sh` checks launcher arguments through stub executables without model calls. Run the matching self-test after changing these scripts, or `./scripts/test-all.sh` to run all three (plus `shellcheck` when installed).
 
 Preview changes before installing with:
 

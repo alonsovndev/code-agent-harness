@@ -24,7 +24,7 @@ Use the `ui-polish` skill before reviewing. Treat it as the source of truth for:
 
 ## Scope
 
-This command reviews visual design, motion, and responsive layout only. Component architecture, hooks correctness, state management, and type safety are out of scope — defer those to the `react-ui` agent (React/Vite/AntD projects) or the general `code-review` skill.
+This command reviews visual design, motion, and responsive layout only. Component architecture, hooks correctness, state management, and type safety are out of scope — defer those to the `react-ui` agent (React/Vite/AntD projects) or the `code-review` agent.
 
 ## After Reviewing
 

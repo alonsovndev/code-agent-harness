@@ -15,6 +15,7 @@ Routes work to the appropriate domain subagent. Prefer one primary subagent at a
 | **Requirements** | Backlog, acceptance criteria, user stories, prioritization | `product-ba` | `agile-planning`, `technical-writer` |
 | **Architecture Planning** | C4 diagrams, ADRs, technical planning, sequencing, risk analysis | `tech-lead` | `diagram-author`, `technical-writer` |
 | **Post-change Review** | Correctness, security, tests, verification before completion | `code-review` | `quality-gates`, `secure-code-generation` |
+| **Refactor** | Behavior-preserving restructuring, renames, extractions, layer moves | Domain subagent for the touched layer (`clean-architecture` for cross-layer moves) | `programming-principles`, `code-generation-style`, `test-strategy` |
 | **Bug Sweep** | Proactive correctness scan of a module/repo, not tied to a diff | `bug-finder` | `test-strategy` (for reproduction context) |
 | **Documentation Maintenance** | Docs drifted from code, stale docs, updating docs after code changes | `doc-tracker` | `technical-writer`, `markdown-author` |
 
@@ -45,5 +46,6 @@ Routes work to the appropriate domain subagent. Prefer one primary subagent at a
 - **opencode**: Subagents are defined in `agents/opencode/*.md`. Skills in `skills/`.
 - **Copilot CLI**: Agents are defined in `agents/copilot/*.agent.md`, and every agent must also be listed in the Agent Registry in `adapters/copilot/instructions/copilot-instructions.md`. Skills in `skills/`.
 - **Antigravity CLI**: Agents are defined in `agents/antigravity/<name>/agent.md`. Skills in `skills/`.
+- **Codex CLI**: Agents are defined in `agents/codex/*.toml`. Skills in `skills/`; workflow skills in `adapters/codex/skills/`.
 
-All four platforms share the same skill directory and instructions. Router logic is identical; only the agent file format differs. `scripts/verify.sh` fails if the four agent sets diverge.
+All five platforms share the same skill directory and instructions. Router logic is identical; only the agent file format differs. `scripts/verify.sh` fails if the agent sets diverge.
