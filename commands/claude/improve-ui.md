@@ -1,5 +1,5 @@
 ---
-description: "Audit and refine an existing React/Vite/AntD UI so it feels intentionally designed — not like a generic AI-generated SaaS app — using the `improve-ui` skill and `ui-polish` agent."
+description: "Audit and refine an existing React/Vite/AntD UI so it feels intentionally designed — not like a generic AI-generated SaaS app — using the `ui-refinement` skill and `ui-polish` agent."
 argument-hint: "Target page, feature, or component area to refine, plus any focus areas such as typography, color, or layout"
 ---
 

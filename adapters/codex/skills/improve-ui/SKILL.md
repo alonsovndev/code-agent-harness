@@ -1,6 +1,6 @@
 ---
 name: improve-ui
-description: "Audit and refine an existing React/Vite/AntD UI so it feels intentionally designed — not like a generic AI-generated SaaS app — using the `improve-ui` skill and `ui-polish` agent."
+description: "Audit and refine an existing React/Vite/AntD UI so it feels intentionally designed — not like a generic AI-generated SaaS app — using the `ui-refinement` skill and `ui-polish` agent."
 ---
 
 Use this skill when the user invokes `$improve-ui` or asks for this workflow. Apply any scope, options, and details supplied with the invocation.
