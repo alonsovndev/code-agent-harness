@@ -11,8 +11,8 @@ These skills are expected by some harness skills but are **no longer tracked in 
 | `vercel-react-best-practices` | [vercel-labs/agent-skills](https://github.com/vercel-labs/agent-skills) | MIT |
 | `vite` | [antfu/skills](https://github.com/antfu/skills) | Per upstream |
 | `find-skills` | [vercel-labs/skills](https://github.com/vercel-labs/skills) | Per upstream |
-| `tdd` | [mattpocock/skills](https://github.com/mattpocock/skills) | Unconfirmed |
-| `ant-design` | `TBD` (upstream not identified yet) | Unverified |
+| `tdd` | [mattpocock/skills](https://github.com/mattpocock/skills) | MIT |
+| `ant-design` | [ant-design/antd-skill](https://github.com/ant-design/antd-skill) | MIT |
 
 Claude Code plugins in [`plugins/claude-plugins.txt`](plugins/claude-plugins.txt) (for example `claude-seo`) are installed from their own marketplaces and are not redistributed either.
 
@@ -25,6 +25,14 @@ This skill started from an upstream skill and was adapted to this harness. Their
 | `git-commit` | [github/awesome-copilot](https://github.com/github/awesome-copilot) | MIT (per upstream frontmatter) | Branch guards, no AI/tool co-author trailers, harness workflow wording |
 
 Do not run `npx skills add` for `git-commit`: the upstream version would overwrite the adapted skill in `skills/`.
+
+## Adapted from Apache-2.0 work
+
+| Skill | Upstream | License | Local changes |
+|---|---|---|---|
+| `ui-polish` (skill and agent) | [pbakaus/impeccable](https://github.com/pbakaus/impeccable) by Paul Bakaus, which started from Anthropic's `frontend-design` skill | Apache-2.0 (copy in [`skills/ui-polish/LICENSE`](skills/ui-polish/LICENSE)) | Motion and responsive guidance condensed and rewritten as stack-agnostic review rules; Impeccable's commands, visitor modes and native-platform references removed |
+
+Modified files carry a note naming the upstream. `ui-refinement` is an original workflow; it only cross-references `ui-polish`.
 
 ## Name collisions
 

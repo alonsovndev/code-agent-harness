@@ -5,4 +5,4 @@ vercel-react-best-practices vercel-labs/agent-skills@react-best-practices
 vite antfu/skills@vite
 find-skills vercel-labs/skills@find-skills
 tdd mattpocock/skills@tdd
-ant-design TBD
+ant-design ant-design/antd-skill@ant-design
