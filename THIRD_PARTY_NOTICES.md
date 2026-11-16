@@ -9,8 +9,8 @@ These skills are expected by some harness skills but are **no longer tracked in 
 | Skill | Upstream | License |
 |---|---|---|
 | `vercel-react-best-practices` | [vercel-labs/agent-skills](https://github.com/vercel-labs/agent-skills) | MIT |
-| `vite` | [antfu/skills](https://github.com/antfu/skills) | Per upstream |
-| `find-skills` | [vercel-labs/skills](https://github.com/vercel-labs/skills) | Per upstream |
+| `vite` | [antfu/skills](https://github.com/antfu/skills) | MIT |
+| `find-skills` | [vercel-labs/skills](https://github.com/vercel-labs/skills) | MIT |
 | `tdd` | [mattpocock/skills](https://github.com/mattpocock/skills) | MIT |
 | `ant-design` | [ant-design/antd-skill](https://github.com/ant-design/antd-skill) | MIT |
 
