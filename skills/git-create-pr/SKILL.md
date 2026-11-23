@@ -64,7 +64,7 @@ gh auth status
 
 ## Commit Current Changes First
 
-The create-pr invocation counts as an explicit request to commit the current changes. Commit them before opening the PR:
+The create-pr invocation counts as an explicit request to commit the current changes. Inspect staged, unstaged, and untracked changes, and commit pending changes before drafting and opening the PR. If the working tree is clean, continue without creating a commit:
 
 - Refuse to start on `main`, `master`, or a detached HEAD; tell the user to run the start-feature command first.
 - Split many or mixed changes into logical commits following the `git-commit` skill (Conventional Commits, one logical change per commit). Split silently — do not ask for approval per split.
@@ -76,7 +76,7 @@ The create-pr invocation counts as an explicit request to commit the current cha
 Before opening a PR, confirm:
 
 - Current branch is not `main` or `master`.
-- Working tree is clean, or uncommitted changes are intentionally excluded.
+- Pending changes have been committed, or explicitly excluded by the user.
 - Branch has at least one commit not present on the base branch.
 - Base branch is explicit or can be inferred safely from tracking/default branch.
 - Remote branch exists, or the flow pushes it (pre-approved by the invocation).
