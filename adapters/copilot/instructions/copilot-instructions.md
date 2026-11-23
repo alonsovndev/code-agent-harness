@@ -52,7 +52,9 @@ Routing notes:
 ## Git and Version Control
 - Keep commits focused; use clear, descriptive messages.
 - Do not add AI or tool co-author trailers or attribution (e.g., `Co-authored-by: ...`) to commit messages.
-- Prefer feature branches; require tests and review before merging.
+- Before the first implementation edit for a multi-step feature, significant fix, or substantial refactor, check the branch and working tree. Use a dedicated working branch: reuse one already dedicated to the same initiative, or create a new `feature/`, `fix/`, `chore/`, or `hotfix/` branch following `git-repo-flow`. If the working tree is dirty, stop and ask before switching or creating a branch. Planning and read-only exploration may precede this check; small isolated edits do not require a new branch.
+- Remote synchronization requires prior authorization. Without it, create the branch from the locally available `main` and report that its freshness is unverified; if local `main` is unavailable or unsafe to use, stop and ask.
+- Require tests and review before merging.
 - Before staging and again before a requested commit, check the current branch. Never stage or commit on `main`, `master`, or a detached HEAD. Commit on any other named working branch; `feature/*`, `fix/*`, and `hotfix/*` are examples.
 - Do not commit changes unless the user explicitly asks for a commit, or invokes a create-PR command or skill — that invocation counts as an explicit request to commit the current changes (splitting them logically), push the working branch, and create the PR.
 - Never push commits on `main`, `master`, or a detached HEAD — not even with explicit approval, and not within the create-PR flow. Push only from a named working branch (`feature/*`, `fix/*`, `hotfix/*`, `chore/*`, or another named branch), and only when the user explicitly asks or the create-PR flow has been invoked. If a protected branch needs a push, do the local step and give the user the exact command to run.

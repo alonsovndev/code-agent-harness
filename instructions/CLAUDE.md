@@ -25,6 +25,8 @@ These baseline rules apply to every project. Do not apply stack-specific archite
 
 ## Git and Version Control
 
+- Before the first implementation edit for a multi-step feature, significant fix, or substantial refactor, check the branch and working tree. Use a dedicated working branch: reuse one already dedicated to the same initiative, or create a new `feature/`, `fix/`, `chore/`, or `hotfix/` branch following `git-repo-flow`. If the working tree is dirty, stop and ask before switching or creating a branch. Planning and read-only exploration may precede this check; small isolated edits do not require a new branch.
+- Remote synchronization requires prior authorization. Without it, create the branch from the locally available `main` and report that its freshness is unverified; if local `main` is unavailable or unsafe to use, stop and ask.
 - Do not commit changes unless the user explicitly asks for a commit, or invokes a create-PR command or skill — that invocation counts as an explicit request to commit the current changes (splitting them logically), push the working branch, and create the PR.
 - Before staging and again before a requested commit, check the current branch. Do not stage or commit on `main`, `master`, or a detached HEAD; ask the user to create or switch to a named working branch. Any other named branch is allowed.
 - Do not push unless the user explicitly asks or the create-PR flow has been invoked (it pre-approves pushing the working branch). Do not force-push unless the user explicitly asks.
